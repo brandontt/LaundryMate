@@ -10,3 +10,14 @@
     	line-height: 14px;
     	text-align: center;
     }
+
+    .button-default {
+    	height: 45px;
+    	width: 170px;
+    	border-radius: 4px;
+    	background: linear-gradient(270deg, #4DD0E1 0%, #2196F3 100%);
+    	box-shadow: 0 17px 20px 0 rgba(35,10,74,0.15);
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+    }
