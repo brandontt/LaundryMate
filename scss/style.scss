@@ -1,9 +1,88 @@
+/* SECTIONS*/
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
 .section--dark {
-    background: #17223a;
+    background-color: #17223a;
+}
+
+.section--darker {
+    background-color: #121A2E;
+}
+
+.section--light {
+    background: linear-gradient(133.62deg, #2B91FE 0%, #485FFF 100%);
+}
+
+.section--lighter {
+    background-color: #F6F9FC;
+}
+
+.header--main {
+    height: 85px;
+    width: 1440px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: -85px;
+}
+
+.section--hero {
+    background-image: url(../images/user-hero.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 700px;
+    background-size: cover;
+
+}
+
+.section--hero h1 {
+    color: #fff;
+    max-width: 350px;
+    padding-top: 125px;
+}
+
+.section--hero p {
+    color: rgba(255,255,255,0.7);
+    max-width: 400px;
+    font-weight: 300;
+}
+
+.section--benefits {
+
+}
+
+.section--coverage h4 {
+    padding-top: 105px;
+}
+
+/* HEADINGS */
+
+h1 {
+    color: #000;
+    font-size: 36px;
+    padding-bottom: 17px;
+}
+
+h3 {
+    color: #000;
+    font-size: 24px;
+}
+
+h4 {
+    color: #2196F3;
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 16px;
+    color: #fff;
 }
 
 /* BUTTONS */
-.button--download {
+
+.button--cta {
     	height: 45px;
     	width: 127px;
     	border-radius: 4px;
@@ -16,6 +95,7 @@
     	line-height: 45px;
     	text-align: center;
         text-transform: uppercase;
+        float: right;
 }
 
 .button--primary {
@@ -30,42 +110,66 @@
         text-transform: uppercase;
 }
 
-.button--appStore .button--playStore {
+.button .button__apple, .button__google {
 	height: 45px;
 	width: 151px;
-	border-radius: 4.19px;
-	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
 }
 
-.button--appStore_opac {
-
-}
-
-.button--playStore_opac {
-
+.button--opac__apple, .button--opac__google {
+    height: 45px;
+	width: 151px;
+    opacity: 0.25;
 }
 
 /* BODY */
 
 * {
     font-family: Avenir;
-    background-color: #17223a;
+    margin: 0;
+    padding: 0;
 }
 
-.section--dark .section--hero{
-    background-image: url(user-hero.jpg);
-    width: 100%;
-    background-size: cover;
-
-}
-
-.header--links li {
-    display: flex;
+.header__nav .navList__item {
+    display: inline-block;
+    padding: 5px;
     text-decoration: none;
     float: right;
-    align-items: center;
+    color: #fff;
 }
 
-.section--footer.section--dark.section--navigation.section--copyright {
-    background-color: #17213A;
+p {
+    max-width: 400px;
+    font-weight: 300;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.header__logo img {
+    height: 30px;
+    padding: 30px 0;
+}
+
+.image__map {
+    height: 455px;
+    width: 820px;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 125px;
+    top: -300px;
+}
+
+.image__user {
+    height: 420px;
+    width: 750px;
+    position: relative;
+    top: -250px;
+    right: 20px;
+}
+
+.list__order {
+    float: right;
+    position: relative;
+    top: -340px;
 }

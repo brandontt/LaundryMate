@@ -1,122 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>LaundryMate</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
-  </head>
-  <body>
-<div class="header--main">
-    <div class="header--container">
-        <div class="section--dark">
-            <img src="images/logo_white.png" class="header--logo">
-                <div class="header--links">
-                    <ul>
-                        <li>locations</li>
-                        <li>order</li>
-                        <li>partner login</li>
-                        <div class="button--download">download</div>
-                    </ul>
-                </div>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header header--main">
+        <div class="container">
+            <div class="header__logo">
+                <img src="images/logo_white.png" alt="LaundryMate">
+            </div>
+            <div class="header__nav">
+                <ul class="navList">
+                    <li class="navList__item">
+                        <a class="navList__link">Locations</a>
+                    </li>
+                    <li class="navList__item">
+                        <a class="navList__link navList__link--disabled">Order</a>
+                    </li>
+                    <li class="navList__item">
+                        <a class="navList__link">Partner Login</a>
+                    </li>
+                    <li class="navList__item">
+                        <a class="button button--cta">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="section section--hero section--dark">
+        <div class="container">
+            <div class="section__header"></div>
+            <div class="section__content">
+                <h1>Dry cleaning & laundry to your door</h1>
+                <p>Instead of sitting through traffic and spending too much time on the phone to have your laundry cleaned, create orders from the convenience of your home.</p>
+                <div class="button button__apple"></div>
+                <div class="button button__google"></div>
+            </div>
         </div>
     </div>
-</div>
-<div class="section--dark section--hero">
-    <h1>Dry cleaning & laundry to your door</h1>
-        <p>Instead of sitting through traffic and spending too much time on the phone to have your laundry cleaned, create orders from the convenience of your home.</p>
-            <img src="images/appstore_2x.png" class="button--appStore">
-            <img src="images/googleplay_2x.png" class="button--playStore">
-</div>
-<div class="section--lightest section--coverage">
-    <h4>Currently serving Chicago suburbs</h4>
-        <h1>We do the work for you</h1>
+
+
+    <div class="section section--coverage">
+        <div class="container">
+            <h4>Currently serving Chicago suburbs</h4>
+            <h1>We do the work for you</h1>
             <p>Whether you are at home or out of town, LaundryMate helps you fing the best laundry services, while allowing you to make purchases off of your phone.</p>
-                <a href="locations.html">See all locations</a>
-    <img src="images/chicago-map.jpg" class="map--image"/>
-    <img src="images/user-photo.png" />
-        <div class="order--list">
-            <h4>Quick steps to get started</h4>
+            <a href="locations.html">See all locations</a>
+
+            <img src="images/chicago-map.jpg" class="image__map"/>
+            <img src="images/user-photo.png" class="image__user"/>
+
+            <div class="list__order">
+                <h4>Quick steps to get started</h4>
                 <h3>Schedule a pickup</h3>
-                    <p>Schedule to have your items picked up and if needed, we can do same-day service.</p>
+                <p>Schedule to have your items picked up and if needed, we can do same-day service.</p>
                 <h3>Track your order</h3>
-                    <p>Recive push notifications every step of the way to know when to expect your items returned.</p>
+                <p>Recive push notifications every step of the way to know when to expect your items returned.</p>
                 <h3>Fast delivery</h3>
-                    <p>A professional will arrive at your door at the specified time your freshly cleaned items.</p>
+                <p>A professional will arrive at your door at the specified time your freshly cleaned items.</p>
+            </div>
         </div>
-</div>
-<div class="section--dark section--benefits">
-    <div class="heading--icon"></div>
-        <h3><img src="images/time-icon.png" />Saving you time</h3>
+    </div>
+    <div class="section section section--dark section--benefits">
+        <div class="container">
+            <div class="heading--icon"></div>
+            <h3><img src="images/time-icon.png" />Saving you time</h3>
             <p>Enjoy the convenience of not having to drive or having a coversation over the phone for your laundry to be cleaned.</p>
-    <div class="heading--icon"></div>
-        <h3><img src="images/repeat-icon.png" />Repeat orders</h3>
+            <div class="heading--icon"></div>
+            <h3><img src="images/repeat-icon.png" />Repeat orders</h3>
             <p>With our easy to use app you can create weekly or daily orders to be cleaned with your favorite laundry facility.</p>
-    <div class="heading--icon"></div>
-        <h3><img src="images/care-icon.png" />Guaranteed care</h3>
+            <div class="heading--icon"></div>
+            <h3><img src="images/care-icon.png" />Guaranteed care</h3>
             <p>Each garmet is special that's why we offer a variety of services sush as wash and fold, dry cleaning, hang dry, and tailoring.</p>
-</div>
-<div class="section--darker">
-    <a>Are you convinced yet?<span>First time users get $10 credit.</span></a>
-    <div class="button--primary">order online</div>
-</div>
-<div class="section--lighter section--process">
-    <img src="images/order-status-screen.png" />
-    <img src="images/reminders-screen.png" />
-    <img src="images/order-device.png" />
-    <h4>Simple and easy process</h4>
-        <h1>Schedule in seconds</h1>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="section--darker">
+        <div class="container">
+            <a>Are you convinced yet?<span>First time users get $10 credit.</span></a>
+            <div class="button--primary">order online</div>
+        </div>
+    </div>
+    <div class="section--lighter section--process">
+        <div class="container">
+            <img src="images/order-status-screen.png" />
+            <img src="images/reminders-screen.png" />
+            <img src="images/order-device.png" />
+            <h4>Simple and easy process</h4>
+            <h1>Schedule in seconds</h1>
             <p>With a few simple clicks you will have your clothes cleaned in no time. LaundryMate offers different features from having your clothes cleaned to tailoring, ironing, and so much more.</p>
-</div>
-<div class="section--lightest">
+        </div>
+    </div>
     <div class="optionCard">
         <img src="images/laundry-icon.png" />
-            <h4>Need clothes washed?</h4>
-                <a href="">Learn more</a>
+        <h4>Need clothes washed?</h4>
+        <a href="">Learn more</a>
     </div>
     <div class="optionCard">
         <img src="images/dry-cleaner-icon.png" />
-            <h4>Need dry cleaning?</h4>
-                <a href="">Learn more</a>
+        <h4>Need dry cleaning?</h4>
+        <a href="">Learn more</a>
     </div>
     <div class="optionCard">
         <img src="images/tailor-icon.png" />
-            <h4>Need tailoring?</h4>
-                <a href="">Learn more</a>
+        <h4>Need tailoring?</h4>
+        <a href="">Learn more</a>
     </div>
-</div>
-<div class="section--light">
-    <h2>Download LaundryMate App</h2>
-        <a href="">Our app is avalible for free</a>
-            <img src="images/appstore_2x.png" class="button--appStore_opac"></div>
-            <img src="images/googleplay_2x.png" class="button--playStore_opac"></div>
-</div>
-<div class="section--footer section--dark section--navigation">
-    <img src="images/logo_white.png" class="logoSmall"></div>
-        <p>Laundry and dry-cleaning on demand, delivered right to your door.</p>
+    <div class="section section--light">
+        <div class="container">
+            <h2>Download LaundryMate App</h2>
+            <a href="">Our app is avalible for free</a>
+            <div class="button button--opac__apple"></div>
+            <div class="button button--opac__google"></div>
+        </div>
+    </div>
+    <div class="section section--footer section--dark section--navigation">
+        <div class="container">
+            <img src="images/logo_white.png" class="logo--small">
+            <p>Laundry and dry-cleaning on demand, delivered right to your door.</p>
             <img src"images/" />
             <img src"images/" />
             <img src"images/" />
-                <ul>
-                    <h6>LaundryMate</h6>
-                        <li>Landromat</li>
-                        <li>Dry Cleaner</li>
-                        <li>Tailor</li>
-                        <li>Locations</li>
-                </ul>
-                <ul>
-                    <h6>Partners</h6>
-                        <li>Partner Login</li>
-                        <li>Become a Partner</li>
-                </ul>
-                    <h6>Get the App</h6>
-                        <img src="images/appstore_2x.png" class="button--appStore_opac"></div>
-                        <img src="images/googleplay_2x.png" class="button--playStore_opac"></div>
-</div>
-<div class="section--footer section--dark Section--copyright">
-    <a>Copyright© 2017 LaundryMate</a>
-        <a href="">Terms of Use</a>
-        <a href="">Privacy Policy</a>
-</div>
-    </body>
+            <ul>
+                <h6>LaundryMate</h6>
+                <li>Landromat</li>
+                <li>Dry Cleaner</li>
+                <li>Tailor</li>
+                <li>Locations</li>
+            </ul>
+            <ul>
+                <h6>Partners</h6>
+                <li>Partner Login</li>
+                <li>Become a Partner</li>
+            </ul>
+            <h6>Get the App</h6>
+            <div class="button button--opac__apple"></div>
+            <div class="button button--opac__google"></div>
+        </div>
+    </div>
+    <div class="section section--footer section--dark section--copyright">
+        <div class="container">
+            <a>Copyright© 2017 LaundryMate</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</body>
 </html>
