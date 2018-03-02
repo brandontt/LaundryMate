@@ -1,0 +1,20 @@
+$header-height: 80px;
+
+$brand-primary: #2196F3;
+$brand-secondary: #485FFF;
+$brand-cta: #2B91FE;
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

@@ -1,209 +1,259 @@
+@import 'reset.scss';
+@import 'variables.scss';
+
+
+
+/* BODY */
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+* {box-sizing: border-box;}
+
+html {
+    font-family: "system";
+    font-size: .625em;
+}
+
+body {
+    font-size: 1.2em;
+    line-height: 1.45;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+a {
+    color: $brand-primary;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $brand-secondary;
+    text-decoration: underline;
+}
+
+/* augmented fourth scale base 10px */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Avenir;
+    margin: 1.414em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+h1 {
+    color: #000;
+    font-size: 3.998rem;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    font-weight: bold;
+}
+
+h2 {
+    color: #fff;
+    font-size: 2.827rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.999rem;
+}
+
+h4 {
+    font-size: 1.414rem;
+    font-weight: 300;
+
+    color: $brand-primary;
+    color: #000;
+}
+
+h6 {
+    font-size: 1rem;
+    color: #fff;
+}
+
 /* SECTIONS*/
 
 .container {
-    margin: 0 240px;
-    padding: 0 125px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.section--dark {
+.section--dark { /* for reverse contrast section */
     background-color: #17223a;
+    color: rgba(255,255,255,.5);
 }
 
 .section--darker {
     background-color: #121A2E;
 }
 
-.section--light {
-    background: linear-gradient(133.62deg, #2B91FE 0%, #485FFF 100%);
+.section--cta {
+    background: linear-gradient(133.62deg, $brand-cta 0%, $brand-secondary 100%);
 }
 
 .section--lighter {
     background-color: #F6F9FC;
 }
 
-.header--main {
-    height: 85px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+
+
+
+.navList {
+    display: flex;
+    align-items: center;
+
+    .navList__item {
+        display: inline-block;
+        padding: 10px;
+        float: left;
+    }
 }
 
-.section--hero {
-    background-image: url(../images/user-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    max-width: 100%;
-    height: 700px;
-    margin-top: -85px;
-}
 
-.section--hero h1 {
-    color: #fff;
-    max-width: 350px;
-    padding-top: 230px;
-}
-
-.section--hero p {
-    max-width: 400px;
-    font-weight: 300;
-}
-
-.section--benefits h3 {
-    color: #fff;
-}
-
-.section--coverage h2 {
-    text-align: center;
-}
-
-.section--coverage h4 {
-    padding-top: 105px;
-}
-
-/* HEADINGS */
-
-h1 {
-    color: #000;
-    font-size: 36px;
-    padding-bottom: 17px;
-}
-
-h2 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 300;
-}
-
-h3 {
-    color: #000;
-    font-size: 24px;
-}
-
-h4 {
-    color: #2196F3;
-    font-size: 24px;
-    font-weight: 300;
-}
-
-h6 {
-    font-size: 16px;
-    color: #fff;
-}
 
 /* BUTTONS */
 
-.button--cta {
-    	height: 45px;
-    	width: 127px;
-    	border-radius: 4px;
-        border: none;
-    	background-color: #FFFFFF;
-    	box-shadow: 0 6px 20px 0 rgba(0,0,0,0.15);
-    	color: #00A5E4;
-    	font-size: 12px;
-    	letter-spacing: 1px;
-    	line-height: 45px;
-    	text-align: center;
-        text-transform: uppercase;
+.button {
+    border-radius: 2px;
+    background: darken(#F6F9FC, .10);
+    box-shadow: 0 2px 2px 0 rgba(35,10,74,0.15);
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+    padding: 0 10px;
+    display: inline-block;
 }
 
 .button--primary {
-    	height: 45px;
-    	width: 170px;
-    	border-radius: 4px;
-    	background: linear-gradient(270deg, #4DD0E1 0%, #2196F3 100%);
-    	box-shadow: 0 17px 20px 0 rgba(35,10,74,0.15);
-        color: #fff;
-        font-size: 12px;
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 42px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: $brand-cta;
+    box-shadow: 0 17px 20px 0 rgba(35,10,74,0.15);
+    text-transform: uppercase;
+    line-height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.button__apple a {
-    background-size: contain;
-	height: 45px;
-	width: 100%;
+
+
+.button--cta {
+    @extend .button--primary;
+
+    color: #fff;
+    background: linear-gradient(270deg, $brand-secondary 0%, $brand-primary 100%);
+    letter-spacing: 1px;
+
+    &:hover {
+        color: #FFF;
+    }
 }
 
-.button__google a {
-    background-size: contain;
-    height: 45px;
-    width: 100%;
-}
+
 
 .button--opac__apple {
     background-image: url(../images/appstore_2x.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 45px;
-	width: 100%;
+    width: 151.1px;
     opacity: 0.25;
 }
+
 .button--opac__google {
     background-image: url(../images/googleplay_2x.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 45px;
-	width: 100%;
+    width: 151.1px;
     opacity: 0.25;
 }
 
-.button {
-    margin-right: 10px;
-    display: inline-block;
+
+/* HEADER */
+
+.header {
+    background: $brand-primary;
+    box-shadow: inset 0 -1px 0 0 rgba(255,255,255,0.12);
+
+    overflow: hidden;
+
+    &.header--onImage {
+        background: none;
+    }
+
+    &.header--onNextSection {
+        margin-bottom: -$header-height;
+        //position: relative;
+    }
+
+    .container {
+        display: flex;
+        height: $header-height;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__logo {
+
+        img {
+            height: 30px;
+        }
+    }
+
 }
 
-/* BODY */
+.header__nav {
 
-* {
-    font-family: Avenir;
-    margin: 0;
-    padding: 0;
+    .header__navTrigger {
+        @include tablet {
+            display: none;
+        }
+    }
+    .header__navList {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    .navList__link {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .navList__item {
+        padding: 15px;
+
+        &.navList__item--disabled {
+            opacity: 0.5;
+            pointer-events: none;
+            cursor: default;
+        }
+
+        @include desktop {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
 }
 
-.header__nav .navList__item{
-    display: inline-block;
-    padding: 5px;
-    text-decoration: none;
-    color: #fff;
-    float: right;
-}
 
-.section p {
-    max-width: 400px;
-    font-weight: 300;
-    line-height: 26px;
-    padding-bottom: 20px;
-    color: rgba(255,255,255,0.7);
-}
 
-.header__logo img {
-    height: 30px;
-    padding: 30px 0;
-}
 
-.image__map {
-    height: 455px;
-    width: 820px;
-    float: right;
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-    top: -290px;
-    left: 125px;
-}
 
-.image__user {
-    height: 420px;
-    width: 750px;
-    position: relative;
-    top: -300px;
-    right: 20px;
-}
-
-.list__order {
-    float: right;
-    position: relative;
-    top: -350px;
-}
+/* link these properly later */
+@import 'routes/chicago-landing.scss';

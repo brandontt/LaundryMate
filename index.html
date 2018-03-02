@@ -6,32 +6,45 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header header--main">
+    <header class="header header--onNextSection header--onImage">
         <div class="container">
+
             <div class="header__logo">
                 <img src="images/logo_white.png" alt="LaundryMate">
             </div>
+
             <div class="header__nav">
-                <ul class="navList">
-                    <li class="navList__item">
-                        <a class="navList__link">Locations</a>
-                    </li>
-                    <li class="navList__item">
-                        <a class="navList__link navList__link--disabled">Order</a>
-                    </li>
-                    <li class="navList__item">
-                        <a class="navList__link">Partner Login</a>
-                    </li>
-                    <li class="navList__item">
-                        <a class="button button--cta">Download</a>
-                    </li>
-                </ul>
+
+                <div class="header__navTrigger">
+
+                    <ul class="navList">
+                        <li class="navList__item"><a class="navList__link" href="#">TRIGGER</a></li>
+                    </ul>
+
+                </div>
+                <div class="header__navList">
+
+                    <ul class="navList">
+                        <li class="navList__item">
+                            <a href="#" class="navList__link">Locations</a>
+                        </li>
+                        <li class="navList__item navList__item--disabled">
+                            <a href="#" class="navList__link">Order</a>
+                        </li>
+                        <li class="navList__item">
+                            <a href="#" class="navList__link">Partner Login</a>
+                        </li>
+                        <li class="navList__item">
+                            <a href="#" class="button button--cta">Download</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </header>
-    <div class="section section--hero section--dark">
+    <div class="section section--dark section--homepageHero">
         <div class="container">
-            <div class="section__header"></div>
             <div class="section__content">
                 <h1>Dry cleaning & laundry to your door</h1>
                 <p>Instead of sitting through traffic and spending too much time on the phone to have your laundry cleaned, create orders from the convenience of your home.</p>
@@ -64,18 +77,21 @@
     <div class="section section section--dark section--benefits">
         <div class="container">
             <h2>Reap the benefits of LaundryMate</h2>
-            <div class="timeIcon"></div>
-            <img src="images/time-icon.png">
-            <h3>Saving you time</h3>
-            <p>Enjoy the convenience of not having to drive or having a coversation over the phone for your laundry to be cleaned.</p>
-            <div class="repeatIcon"></div>
-            <img src="images/repeat-icon.png">
-            <h3>Repeat orders</h3>
-            <p>With our easy to use app you can create weekly or daily orders to be cleaned with your favorite laundry facility.</p>
-            <div class="careIcon"></div>
-            <img src="images/care-icon.png">
-            <h3>Guaranteed care</h3>
-            <p>Each garmet is special that's why we offer a variety of services sush as wash and fold, dry cleaning, hang dry, and tailoring.</p>
+            <div class="tipsCard">
+                <img src="images/time-icon.png" class="timeIcon">
+                <h3>Saving you time</h3>
+                <p>Enjoy the convenience of not having to drive or having a coversation over the phone for your laundry to be cleaned.</p>
+            </div>
+            <div class="tipsCard">
+                <img src="images/repeat-icon.png" class="repeatIcon">
+                <h3>Repeat orders</h3>
+                <p>With our easy to use app you can create weekly or daily orders to be cleaned with your favorite laundry facility.</p>
+            </div>
+            <div class="tipsCard">
+                <img src="images/care-icon.png" class="careIcon">
+                <h3>Guaranteed care</h3>
+                <p>Each garmet is special that's why we offer a variety of services sush as wash and fold, dry cleaning, hang dry, and tailoring.</p>
+            </div>
         </div>
     </div>
 

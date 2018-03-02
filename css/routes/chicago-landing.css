@@ -1,0 +1,69 @@
+.section--homepageHero {
+  background-image: url(../images/user-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px; }
+  .section--homepageHero h1 {
+    color: #fff; }
+  .section--homepageHero .section__content {
+    max-width: 350px;
+    padding-top: 230px;
+    font-size: 1.8rem; }
+
+.section--benefits {
+  padding: 50px 0; }
+
+.section--benefits h3 {
+  color: #fff; }
+
+.section--benefits p {
+  color: #A0AEC0;
+  font-size: 14px; }
+
+.section--benefits img {
+  height: 50px;
+  display: inline-block;
+  padding-right: 16px; }
+
+.section--benefits h3 {
+  display: inline; }
+
+.section--coverage h2 {
+  text-align: center; }
+
+.section--coverage h4 {
+  padding-top: 105px; }
+
+.section--coverage {
+  height: 950px; }
+
+.section--coverage p {
+  color: #6B7C93; }
+
+.section--process p {
+  color: #6B7C93; }
+
+.image__map {
+  height: 455px;
+  width: 820px;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: -290px;
+  left: 125px; }
+
+.image__user {
+  height: 420px;
+  width: 750px;
+  position: relative;
+  top: -300px;
+  right: 20px; }
+
+.list__order {
+  float: right;
+  position: relative;
+  top: -350px; }
+
+/*# sourceMappingURL=chicago-landing.css.map */
