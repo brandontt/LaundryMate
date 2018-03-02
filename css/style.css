@@ -89,13 +89,13 @@ h2 {
   font-weight: 300; }
 
 h3 {
-  font-size: 1.999rem; }
+  font-size: 1.999rem;
+  color: #000; }
 
 h4 {
   font-size: 1.414rem;
   font-weight: 300;
-  color: #2196F3;
-  color: #000; }
+  color: #2196F3; }
 
 h6 {
   font-size: 1rem;
@@ -146,7 +146,7 @@ h6 {
   border-radius: 4px;
   background-color: #FFFFFF;
   color: #2B91FE;
-  box-shadow: 0 17px 20px 0 rgba(35, 10, 74, 0.15);
+  box-shadow: 0 2px 2px 0 rgba(35, 10, 74, 0.15);
   text-transform: uppercase;
   line-height: 42px;
   padding-left: 20px;
@@ -183,7 +183,9 @@ h6 {
   .header.header--onImage {
     background: none; }
   .header.header--onNextSection {
-    margin-bottom: -80px; }
+    margin-bottom: -80px;
+    position: relative;
+    position: sticky; }
   .header .container {
     display: flex;
     height: 80px;

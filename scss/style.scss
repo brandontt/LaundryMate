@@ -1,8 +1,6 @@
 @import 'reset.scss';
 @import 'variables.scss';
 
-
-
 /* BODY */
 @font-face {
     font-family: system;
@@ -62,6 +60,7 @@ h2 {
 
 h3 {
     font-size: 1.999rem;
+    color: #000;
 }
 
 h4 {
@@ -69,7 +68,6 @@ h4 {
     font-weight: 300;
 
     color: $brand-primary;
-    color: #000;
 }
 
 h6 {
@@ -104,8 +102,6 @@ h6 {
 }
 
 
-
-
 .navList {
     display: flex;
     align-items: center;
@@ -137,7 +133,7 @@ h6 {
     border-radius: 4px;
     background-color: #FFFFFF;
     color: $brand-cta;
-    box-shadow: 0 17px 20px 0 rgba(35,10,74,0.15);
+    box-shadow: 0 2px 2px 0 rgba(35,10,74,0.15);
     text-transform: uppercase;
     line-height: 42px;
     padding-left: 20px;
@@ -193,7 +189,8 @@ h6 {
 
     &.header--onNextSection {
         margin-bottom: -$header-height;
-        //position: relative;
+        position: relative;
+        position: sticky;
     }
 
     .container {
