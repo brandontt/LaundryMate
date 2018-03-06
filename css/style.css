@@ -265,14 +265,7 @@ h6 {
   color: #6B7C93; }
 
 .image__map {
-  height: 455px;
-  width: 820px;
-  float: right;
-  padding: 0px;
-  margin: 0px;
-  position: relative;
-  top: -290px;
-  left: 125px; }
+  display: fle; }
 
 .image__user {
   height: 420px;
